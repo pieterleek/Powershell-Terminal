@@ -1,0 +1,62 @@
+/* Box-sizing reset zorgt dat randen en padding de breedte niet verstoren */
+* { 
+    box-sizing: border-box; 
+}
+
+body { 
+    background-color: #012456; /* Klassiek PowerShell blauw */
+    color: #eeedf0; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-align: center; 
+    padding-top: 10vh; /* Zorgt voor een mooie afstand vanaf de bovenkant */
+    margin: 0;
+}
+
+/* Het kader om het formulier heen */
+.login-box {
+    background-color: rgba(0, 0, 0, 0.2); /* Subtiel transparant zwart */
+    padding: 40px;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px; /* Zorgt dat hij op grote schermen niet te breed wordt */
+}
+
+h2 { 
+    margin-top: 0; 
+    font-size: 24px; 
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Styling voor zowel het wachtwoord- als de tekstvelden */
+input[type="password"], 
+input[type="text"] { 
+    padding: 12px; 
+    margin-bottom: 15px; 
+    width: 100%; 
+    font-size: 16px; 
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+button { 
+    padding: 12px 24px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    width: 100%;
+}
+
+button:hover { 
+    background-color: #eee; /* Licht op als je er met de muis overheen gaat */
+}

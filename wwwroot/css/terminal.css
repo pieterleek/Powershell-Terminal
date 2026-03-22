@@ -1,0 +1,91 @@
+* { 
+    box-sizing: border-box; 
+}
+
+body { 
+    background-color: #012456; 
+    color: #eeedf0; 
+    font-family: Consolas, "Courier New", monospace; /* Typisch terminal lettertype */
+    margin: 20px; 
+}
+
+h1 { 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    color: white; 
+    font-size: 24px; 
+    margin-top: 0;
+}
+
+.info { 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    color: #aaa; 
+    margin-bottom: 15px; 
+}
+
+.console-box { 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    background-color: #012456; 
+    min-height: 400px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Kleine schaduw aan de binnenkant */
+}
+
+.input-row {
+    display: flex; 
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.prompt {
+    padding: 8px 8px 8px 0;
+    color: #eeedf0;
+}
+
+textarea { 
+    flex-grow: 1; /* Neemt alle overgebleven ruimte in de breedte in */
+    padding: 8px; 
+    font-family: Consolas, "Courier New", monospace; 
+    background-color: #012456; 
+    color: white; 
+    border: 1px solid #555; 
+    resize: vertical; 
+    font-size: 16px;
+}
+
+textarea:focus { 
+    outline: none; 
+    border-color: #aaa; 
+}
+
+button { 
+    padding: 8px 16px; 
+    margin-left: 10px;
+    background-color: #ccc; 
+    color: #000;
+    border: none; 
+    border-radius: 4px;
+    cursor: pointer; 
+    font-family: 'Segoe UI', Arial, sans-serif; 
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #eee;
+}
+
+pre { 
+    white-space: pre-wrap; 
+    margin: 0; 
+    padding-bottom: 10px; 
+    font-size: 16px;
+}
+
+/* PowerShell stream kleuren */
+.error { 
+    color: #ff0000; 
+    background-color: black; 
+} 
+
+.warning { 
+    color: #ffff00; 
+}

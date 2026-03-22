@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content="Veilige PowerShell toetsomgeving voor studenten." />
+    <meta name="author" content="Pieter Leek" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <title>Terminal | PowerShell Toetsomgeving</title>
+    
+    <link rel="stylesheet" href="css/terminal.css">
+</head>
+<body>
+    <h1>PowerShell Live Console</h1>
+    <div class="info">Ingelogd als: <strong>{{naam}}</strong> (Klas: {{klas}})</div>
+
+    <div class="console-box">
+        <pre id="output">Welkom {{naam}}.\nTyp je commando en druk op Enter. Gebruik Shift+Enter voor meerdere regels.\n\n</pre>
+        <div class="input-row">
+            <span class="prompt">PS&gt;</span>
+            <textarea id="command" rows="3" autofocus autocomplete="off" onkeydown="handleKey(event)"></textarea>
+            <button onclick="runCmd()">Uitvoeren</button>
+        </div>
+    </div>
+
+    <script src="js/terminal.js"></script>
+</body>
+</html>
